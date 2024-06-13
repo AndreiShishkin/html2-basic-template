@@ -12,7 +12,11 @@
 
 <body class="page__body">
   <header class="header">
-    <img class="header__logo" src="#" alt="Логотип Drink2Go.">
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desctop.svg" width="170" height="36">
+      <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="82" height="36">
+      <img class="header__logo" src="./images/logo-mobile.svg" alt="Логотип Drink2Go." width="32" height="36">
+    </picture>
     <ul class="header__navigation-list navigation-list">
       <li class="navigation-list__item">
         <span class="visually-hidden">Личный кабинет</span>
@@ -77,7 +81,7 @@
       <h2 class="catalog__title title title--center">Каталог</h2>
       <p class="catalog__description">Каталог кофейных напитков</p>
 
-      <form class="catalog__filter filter" action="#" method="get">
+      <form class="catalog__filter filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="fieldset-filter">
           <legend class="fieldset-filter__title">Цена</legend>
           <div class="fieldset-filter__range-wrapper range">
@@ -101,7 +105,7 @@
         <fieldset class="fieldset-filter">
           <legend class="fieldset-filter__title">Наличие молока</legend>
           <label class="fieldset-filter__label">
-            <input class="fieldset-filter__radio" type="radio" name="type-milk" value="no-metter">
+            <input class="fieldset-filter__radio" type="radio" name="type-milk" value="no-metter" checked>
             <span>Неважно</span>
           </label>
           <label class="fieldset-filter__label">
@@ -141,8 +145,8 @@
             <span>Перу</span>
           </label>
         </fieldset>
-        <button class="fieldset-filter__button button" type="submit">Применить</button>
-        <button class="fieldset-filter__button button button--reset" type="reset">Сбросить</button>
+        <button class="button" type="submit">Применить</button>
+        <button class="button button--reset" type="reset">Сбросить</button>
       </form>
 
       <div class="catalog__sorting">
@@ -324,7 +328,7 @@
 
       <div class="footer__vendor vendor">
         <span class="vendor__developed">Разработано в</span>
-        <a class="vendor__link" href="#">HTML Academy</a>
+        <a class="vendor__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
 </body>
