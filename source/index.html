@@ -122,51 +122,60 @@
             </div>
           </div>
           <div class="range-signature">
-            <input class="range-signature__price range-signature__price-min" type="text">
-            <input class="range-signature__price range-signature__price-max" type="text">
+            <input class="range-signature__price range-signature__price--min" type="text">
+            <input class="range-signature__price range-signature__price--max" type="text">
           </div>
         </fieldset>
 
         <fieldset class="fieldset-filter">
           <legend class="fieldset-filter__title">Наличие молока</legend>
-          <label class="fieldset-filter__label">
-            <input class="fieldset-filter__radio" type="radio" name="type-milk" value="no-metter" checked>
+          <label class="fieldset-filter__label radio">
+            <input class="radio__input" type="radio" name="type-milk" value="no-metter" checked>
+            <span class="radio__custom"></span>
             <span>Неважно</span>
           </label>
-          <label class="fieldset-filter__label">
-            <input class="fieldset-filter__radio" type="radio" name="type-milk" value="animal">
+          <label class="fieldset-filter__label radio">
+            <input class="radio__input" type="radio" name="type-milk" value="animal">
             <span>Только животное</span>
+            <span class="radio__custom"></span>
           </label>
-          <label class="fieldset-filter__label">
-            <input class="fieldset-filter__radio" type="radio" name="type-milk" value="vegetable">
+          <label class="fieldset-filter__label radio">
+            <input class="radio__input" type="radio" name="type-milk" value="vegetable">
+            <span class="radio__custom"></span>
             <span>Только растительное</span>
           </label>
-          <label class="fieldset-filter__label">
-            <input class="fieldset-filter__radio" type="radio" name="type-milk" value="without-milk" disabled>
+          <label class="fieldset-filter__label radio">
+            <input class="radio__input" type="radio" name="type-milk" value="without-milk" disabled>
+            <span class="radio__custom"></span>
             <span>Без молока</span>
           </label>
         </fieldset>
 
         <fieldset class="fieldset-filter">
           <legend class="fieldset-filter__legend">Страна произрастания</legend>
-          <label class="fieldset-filter__label">
-            <input class="fieldset-filter__checkbox" type="checkbox" name="Brazil" checked>
+          <label class="fieldset-filter__label checkbox">
+            <input class="checkbox__input" type="checkbox" name="Brazil" checked>
+            <span class="checkbox__custom"></span>
             <span>Бразилия</span>
           </label>
-          <label class="filter__label">
-            <input class="fieldset-filter__checkbox" type="checkbox" name="Ethiopia">
+          <label class="fieldset-filter__label checkbox">
+            <input class="checkbox__input" type="checkbox" name="Ethiopia">
+            <span class="checkbox__custom"></span>
             <span>Эфиопия</span>
           </label>
-          <label class="filter__label">
-            <input class="fieldset-filter__checkbox" type="checkbox" name="Colombia">
+          <label class="fieldset-filter__label checkbox">
+            <input class="checkbox__input" type="checkbox" name="Colombia">
+            <span class="checkbox__custom"></span>
             <span>Колумбия</span>
           </label>
-          <label class="filter__label">
-            <input class="fieldset-filter__checkbox" type="checkbox" name="Costa-Rica">
+          <label class="fieldset-filter__label checkbox">
+            <input class="checkbox__input" type="checkbox" name="Costa-Rica">
+            <span class="checkbox__custom"></span>
             <span>Коста-Рика</span>
           </label>
-          <label class="filter__label">
-            <input class="fieldset-filter__checkbox" type="checkbox" name="Peru" disabled>
+          <label class="fieldset-filter__label checkbox">
+            <input class="checkbox__input" type="checkbox" name="Peru" disabled>
+            <span class="checkbox__custom"></span>
             <span>Перу</span>
           </label>
         </fieldset>
