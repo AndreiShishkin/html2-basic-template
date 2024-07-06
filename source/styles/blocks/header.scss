@@ -5,3 +5,15 @@
   color: #ffffff;
   padding: 10px 15px;
 }
+
+.header__description {
+  display: none;
+}
+
+@media (min-width: $desctop-width) {
+  .header__description {
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+  }
+}
