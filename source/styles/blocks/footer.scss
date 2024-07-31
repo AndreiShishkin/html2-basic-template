@@ -1,0 +1,11 @@
+.footer__logo-description {
+  display: none;
+}
+
+@media(min-width: $tablet-width) {}
+
+@media(min-width: $desctop-width) {
+  .footer__logo-description {
+    display: block;
+  }
+}

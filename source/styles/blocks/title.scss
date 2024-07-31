@@ -4,4 +4,9 @@
   color: #7859cf;
   text-transform: uppercase;
   text-align: center;
+
+  &--start {
+    text-align: start;
+    text-transform: none;
+  }
 }
