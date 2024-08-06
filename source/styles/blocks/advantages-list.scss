@@ -4,6 +4,37 @@
   margin: 0;
 }
 
+.advantages-list__item {
+&::before {
+  content: "";
+  display: block;
+  height: 56px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+    background-position: center;
+}
+
+  &:first-child::before {
+    width: 50px;
+    background-image: url("../../icons/speed-icon.svg");
+  }
+
+  &:nth-child(2)::before {
+    width: 52px;
+    background-image: url("../../icons/pocket-icon.svg");
+  }
+
+  &:nth-child(3)::before {
+    width: 42px;
+    background-image: url("../../icons/stroke-icon.svg");
+  }
+
+  &:last-child:before {
+    width: 46px;
+    background-image: url("../../icons/leaf-ikon.svg");
+  }
+}
+
 .advantages-list__header {
   font-size: 18px;
   font-weight: 700;

@@ -1,0 +1,21 @@
+.navigation__menu-button {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background-color: #333333;
+    box-shadow: 0 5.25px 0 #333333,
+    0 10.5px 0 #333333;
+  }
+}

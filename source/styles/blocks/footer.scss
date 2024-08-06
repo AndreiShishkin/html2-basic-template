@@ -1,5 +1,20 @@
+.footer__social-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.footer__logo {
+  flex-basis: 82px;
+}
+
 .footer__logo-description {
   display: none;
+}
+
+.footer__navigation {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @media(min-width: $tablet-width) {}

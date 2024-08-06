@@ -15,43 +15,74 @@
     <picture>
       <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desctop.svg" width="170" height="36">
       <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg" width="82" height="36">
-      <img class="header__logo" src="./images/logo-mobile.svg" alt="Логотип Drink2Go." width="32" height="36">
+      <img class="header__logo" src="../images/logo-mobile.svg" alt="Логотип Drink2Go." width="32" height="36">
     </picture>
     <p class="header__description">Интернет-магазин кофейных напитков</p>
-    <ul class="header__navigation-list navigation-list">
-      <li class="navigation-list__item">
-        <span class="visually-hidden">Личный кабинет</span>
-      </li>
-      <li class="navigation-list__item">
-        <span class="visually-hidden">Корзина</span>
-      </li>
-      <li class="navigation-list__item js-toggle-button">
+
+    <nav class="navigation">
+      <ul class="navigation__list navigation-list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Главная</a>
+        </li>
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Каталог</a>
+        </li>
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">Доставка</a>
+        </li>
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#">О нас</a>
+        </li>
+      </ul>
+
+      <ul class="navigation__list-user navigation-list-user">
+        <li class="navigation-list-user__item">
+          <a class="navigation-list-user__link" href="#">
+            <svg class="navigation-list-user__image" width="16" height="16">
+              <use href="./icons/stack.svg#user-account-icon"></use>
+            </svg>
+            <span class="visually-hidden">Личный кабинет</span>
+          </a>
+        </li>
+        <li class="navigation-list-user__item">
+          <a class="navigation-list-user__link" href="#">
+            <svg class="navigation-list-user__image" width="16" height="16">
+              <use href="./icons/stack.svg#basket-icon"></use>
+            </svg>
+            <span class="visually-hidden">Корзина</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="navigation__wrapper">
+        <button class="navigation__menu-button" type="button"></button>
         <span class="visually-hidden">Меню</span>
-      </li>
-    </ul>
-  </header>
+      </div>
+
+    </nav>
+    </header>
   <main>
     <section class="hero">
       <h1 class="visually-hidden">Кофейные напитки Drink2Go</h1>
       <div class="product slider-pagination">
         <picture>
-          <source media="(min-width: 1440px)" srcset="
+          <source type="image/webp" media="(min-width: 1440px)" srcset="
           ./images/flat-white-desctop@2x.webp 2x,
           ./images/flat-white-desctop@1x.webp 1x" width="600" height="600">
 
-          <source media="(min-width: 768px)" srcset="
+          <source type="image/webp" media="(min-width: 768px)" srcset="
           ./images/flat-white-tablet@2x.webp 2x,
           ./images/flat-white-tablet@1x.webp 1x" width="476" height="476">
 
-          <source media="(min-width: 320px)" srcset="
+          <source type="image/webp" media="(min-width: 320px)" srcset="
           ./images/flat-white-mobile@2x.webp 2x,
           ./images/flat-white-mobile@1x.webp 1x" width="280" height="280">
 
-          <source media="(min-width: 1440px)" srcset="
+          <source type="image/png" media="(min-width: 1440px)" srcset="
           ./images/flat-white-desctop@2x.png 2x,
           ./images/flat-white-desctop@1x.png 1x" width="600" height="600">
 
-          <source media="(min-width: 768px)" srcset="
+          <source type="image/png" media="(min-width: 768px)" srcset="
           ./images/flat-white-tablet@2x.png 2x,
           ./images/flat-white-tablet@1x.png 1x" width="476" height="476">
 
@@ -195,23 +226,23 @@
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-1-mobile@2x.webp 2x,
               ./images/products/coffee-1-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/webp" media="(min-width: 768px)" srcset="
               ./images/products/coffee-1-mobile@2x.webp 2x,
               ./images/products/coffee-1-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 320px)" srcset="
+              <source type="image/webp" media="(min-width: 320px)" srcset="
               ./images/products/coffee-1-mobile@2x.webp 2x,
               ./images/products/coffee-1-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/png" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-1-mobile@2x.png 2x,
               ./images/products/coffee-1-mobile@1x.png 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/png" media="(min-width: 768px)" srcset="
               ./images/products/coffee-1-mobile@2x.png 2x,
               ./images/products/coffee-1-mobile@1x.png 1x" width="130" height="188">
 
@@ -223,30 +254,30 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <span class="catalog-list__price">225₽</span>
-            <button class="catalog-list__button button button--basket">В корзину</button>
+            <button class="catalog-list__button button button--basket" type="button">В корзину</button>
           </div>
         </li>
 
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-2-mobile@2x.webp 2x,
               ./images/products/coffee-2-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/webp" media="(min-width: 768px)" srcset="
               ./images/products/coffee-2-mobile@2x.webp 2x,
               ./images/products/coffee-2-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 320px)" srcset="
+              <source type="image/webp" media="(min-width: 320px)" srcset="
               ./images/products/coffee-2-mobile@2x.webp 2x,
               ./images/products/coffee-2-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/png" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-2-mobile@2x.png 2x,
               ./images/products/coffee-2-mobile@1x.png 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/png" media="(min-width: 768px)" srcset="
               ./images/products/coffee-2-mobile@2x.png 2x,
               ./images/products/coffee-2-mobile@1x.png 1x" width="130" height="188">
 
@@ -258,30 +289,30 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <span class="catalog-list__price">225₽</span>
-            <button class="catalog-list__button button button--basket">В корзину</button>
+            <button class="catalog-list__button button button--basket" type="button">В корзину</button>
           </div>
         </li>
 
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-3-mobile@2x.webp 2x,
               ./images/products/coffee-3-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/webp" media="(min-width: 768px)" srcset="
               ./images/products/coffee-3-mobile@2x.webp 2x,
               ./images/products/coffee-3-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 320px)" srcset="
+              <source type="image/webp" media="(min-width: 320px)" srcset="
               ./images/products/coffee-3-mobile@2x.webp 2x,
               ./images/products/coffee-3-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/png" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-3-mobile@2x.png 2x,
               ./images/products/coffee-3-mobile@1x.png 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/png" media="(min-width: 768px)" srcset="
               ./images/products/coffee-3-mobile@2x.png 2x,
               ./images/products/coffee-3-mobile@1x.png 1x" width="130" height="188">
 
@@ -293,30 +324,30 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <span class="catalog-list__price">225₽</span>
-            <button class="catalog-list__button button button--basket">В корзину</button>
+            <button class="catalog-list__button button button--basket" type="button">В корзину</button>
           </div>
         </li>
 
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-4-mobile@2x.webp 2x,
               ./images/products/coffee-4-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/webp" media="(min-width: 768px)" srcset="
               ./images/products/coffee-4-mobile@2x.webp 2x,
               ./images/products/coffee-4-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 320px)" srcset="
+              <source type="image/webp" media="(min-width: 320px)" srcset="
               ./images/products/coffee-4-mobile@2x.webp 2x,
               ./images/products/coffee-4-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/png" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-4-mobile@2x.png 2x,
               ./images/products/coffee-4-mobile@1x.png 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/png" media="(min-width: 768px)" srcset="
               ./images/products/coffee-4-mobile@2x.png 2x,
               ./images/products/coffee-4-mobile@1x.png 1x" width="130" height="188">
 
@@ -328,30 +359,30 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <span class="catalog-list__price">225₽</span>
-            <button class="catalog-list__button button button--basket">В корзину</button>
+            <button class="catalog-list__button button button--basket" type="button">В корзину</button>
           </div>
         </li>
 
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-5-mobile@2x.webp 2x,
               ./images/products/coffee-5-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/webp" media="(min-width: 768px)" srcset="
               ./images/products/coffee-5-mobile@2x.webp 2x,
               ./images/products/coffee-5-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 320px)" srcset="
+              <source type="image/webp" media="(min-width: 320px)" srcset="
               ./images/products/coffee-5-mobile@2x.webp 2x,
               ./images/products/coffee-5-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/png" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-5-mobile@2x.png 2x,
               ./images/products/coffee-5-mobile@1x.png 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/png" media="(min-width: 768px)" srcset="
               ./images/products/coffee-5-mobile@2x.png 2x,
               ./images/products/coffee-5-mobile@1x.png 1x" width="130" height="188">
 
@@ -363,30 +394,30 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <span class="catalog-list__price">225₽</span>
-            <button class="catalog-list__button button button--basket">В корзину</button>
+            <button class="catalog-list__button button button--basket" type="button">В корзину</button>
           </div>
         </li>
 
         <li class="catalog-list__item">
           <a class="catalog-list__link" href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-6-mobile@2x.webp 2x,
               ./images/products/coffee-6-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/webp" media="(min-width: 768px)" srcset="
               ./images/products/coffee-6-mobile@2x.webp 2x,
               ./images/products/coffee-6-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 320px)" srcset="
+              <source type="image/webp" media="(min-width: 320px)" srcset="
               ./images/products/coffee-6-mobile@2x.webp 2x,
               ./images/products/coffee-6-mobile@1x.webp 1x" width="130" height="188">
 
-              <source media="(min-width: 1440px)" srcset="
+              <source type="image/png" media="(min-width: 1440px)" srcset="
               ./images/products/coffee-6-mobile@2x.png 2x,
               ./images/products/coffee-6-mobile@1x.png 1x" width="130" height="188">
 
-              <source media="(min-width: 768px)" srcset="
+              <source type="image/png" media="(min-width: 768px)" srcset="
               ./images/products/coffee-6-mobile@2x.png 2x,
               ./images/products/coffee-6-mobile@1x.png 1x" width="130" height="188">
 
@@ -398,7 +429,7 @@
           <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
           <div class="catalog-list__wrapper">
             <span class="catalog-list__price">225₽</span>
-            <button class="catalog-list__button button button--basket">В корзину</button>
+            <button class="catalog-list__button button button--basket" type="button">В корзину</button>
           </div>
         </li>
       </ul>
@@ -431,24 +462,25 @@
       </section>
 
       <section class="map">
+        <h2 class="visually-hidden">Местоположение компании Drink2Go</h2>
         <picture>
-          <source media="(min-width: 1440px)" srcset="
+          <source type="image/webp" media="(min-width: 1440px)" srcset="
           ./images/map-desctop@2x.webp 2x,
           ./images/map-desctop@1x.webp 1x" width="1440" height="540">
 
-          <source media="(min-width: 768px)" srcset="
+          <source type="image/webp" media="(min-width: 768px)" srcset="
           ./images/map-tablet@2x.webp 2x,
           ./images/map-tablet@1x.webp 1x" width="768" height="480">
 
-          <source media="(min-width: 320px)" srcset="
+          <source type="image/webp" media="(min-width: 320px)" srcset="
           ./images/map-mobile@2x.webp 2x,
           ./images/map-mobile@1x.webp 1x" width="320" height="420">
 
-          <source media="(min-width: 1440px)" srcset="
+          <source type="image/png" media="(min-width: 1440px)" srcset="
           ./images/map-desctop@2x.jpg 2x,
           ./images/map-desctop@1x.jpg 1x" width="1440" height="540">
 
-          <source media="(min-width: 768px)" srcset="
+          <source type="image/png" media="(min-width: 768px)" srcset="
           ./images/map-tablet@2x.jpg 2x,
           ./images/map-tablet@1x.jpg 1x" width="768" height="480">
 
@@ -461,36 +493,37 @@
     <footer class="footer">
       <section class="footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <div class="footer__logo-wrapper">
+        <div class="footer__social-wrapper">
           <picture>
-            <source media="(min-width: 1440px)" srcset="./images/logo-desctop.svg" width="170" height="36">
-            <source media="(min-width: 768px)" srcset="./images/logo-desctop.svg" width="170" height="36">
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desctop.svg" width="170" height="36">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-desctop.svg" width="170" height="36">
             <img class="footer__logo" src="./images/logo-tablet.svg" alt="Логотип Drink2Go." width="82" height="36">
           </picture>
           <p class="footer__logo-description">Интернет-магазин кофейных напитков</p>
+
+          <ul class="social__list social-list">
+            <li class="social-list__item social-list__item--vk">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">В Контакте</span>
+              </a>
+            </li>
+
+            <li class="social-list__item social-list__item--pinterest">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Pinterest</span>
+              </a>
+            </li>
+
+            <li class="social-list__item social-list__item--ok">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="social__list social-list">
-          <li class="social-list__item social-list__item--vk">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">В Контакте</span>
-            </a>
-          </li>
-
-          <li class="social-list__item social-list__item--pinterest">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Pinterest</span>
-            </a>
-          </li>
-
-          <li class="social-list__item social-list__item--ok">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Одноклассники</span>
-            </a>
-          </li>
-        </ul>
       </section>
 
-      <section class="footer__menu menu">
+      <section class="footer__navigation menu">
         <h2 class="menu__title title title--start">Интернет-магазин</h2>
         <ul class="menu__list menu-list">
           <li class="menu-list__item">
@@ -511,7 +544,7 @@
         </ul>
       </section>
 
-      <section class="footer__media media">
+      <section class="footer__navigation media">
         <h2 class="media__title title title--start">Медиа</h2>
         <ul class="media__list media-list">
           <li class="media-list__item">

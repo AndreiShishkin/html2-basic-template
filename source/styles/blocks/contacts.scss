@@ -1,0 +1,34 @@
+.contacts__adres {
+  padding-left: 19px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    mask-image: url("../../icons/geolocation-icon.svg");
+    background-color: #7859cf;
+  }
+}
+
+.contacts__phone {
+  display: block;
+  padding-left: 19px;
+  position: relative;
+  color: #333333;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    mask-image: url("../../icons/phone-icon.svg");
+    background-color: #7859cf;
+  }
+}

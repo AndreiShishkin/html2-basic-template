@@ -1,0 +1,22 @@
+.vendor {
+  font-size: 12px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+
+.vendor__link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 4px;
+  color: inherit;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 16px;
+    mask-image: url("../../icons/html-academy-icon.svg");
+    background-color: #bdbdbd;
+  }
+
+}
