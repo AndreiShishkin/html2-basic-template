@@ -1,9 +1,23 @@
 .navigation-list-user {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.navigation-list-user__item {
+  flex-basis: 60px;
+}
+
+.navigation-list-user__link {
+  display: block;
+  min-width: 16px;
+  min-height: 16px;
+  padding: 22px;
+}
+
 .navigation-list-user__image {
+  display: block;
   fill: #333333;
 }

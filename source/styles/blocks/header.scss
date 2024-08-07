@@ -1,5 +1,14 @@
 .header {
+  display: flex;
+}
 
+.header__logo {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.header__navigation {
+  margin-left: 88px;
 }
 
 .header__description {
